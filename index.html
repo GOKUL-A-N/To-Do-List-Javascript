@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/71dac4e3f9.js" crossorigin="anonymous"></script>
+</head>
+<body class="md:h-screen w-full flex items-center justify-center bg-[#191919]">
+    <div class="w-[400px] h-[600px] bg-[#111] shadow-[#121212] shadow-lg ">
+        <h1 class="w-full p-2 text-center pt-7 text-white font-bold text-[30px]">To Do List</h1>
+        <div class="w-full p-7 flex gap-3 items-center justify-center">
+            <input type="text" id="inputs" class="input outline-none p-1 rounded-md text-black border-[#111]  w-[90%] h-[35px]" required>
+            <button class="rounded-full text-white font-bold text-[25px]" onclick="handleSubmit()"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <ul id="addcontent" class="w-full p-7 flex flex-col gap-3 items-center justify-center relative">
+            <!-- <li class="w-[100%] rounded-md h-[50px] bg-[#bcef4c] font-semibold flex items-center justify-start gap-3">
+                <input type="checkbox" class="ml-3 h-[20px] rounded-full outline-none w-[20px]">
+                <p class="w-[80%]">Do Coding</p>
+                <button class="p-4 bg-transparent mt-[-15px] text-red-400 text-[25px] h-full w-auto rounded-full " onclick="update()"><i class="fa-solid fa-delete-left"></i></button>
+            </li> -->
+            
+        </ul>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

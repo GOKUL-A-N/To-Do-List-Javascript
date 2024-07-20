@@ -1,6 +1,7 @@
 function handleSubmit() {
     const content = document.getElementById('inputs').value;
     onUpgrade(content)
+    document.getElementById('inputs').value = ''
 }
 let myList = document.querySelector("#addcontent");
 function onUpgrade(content) {
